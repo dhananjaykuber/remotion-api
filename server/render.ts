@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { bundle } from "@remotion/bundler";
 import { renderMedia, selectComposition } from "@remotion/renderer";
-import { default_video_props } from "../src/types";
+import { defaultVideoProps } from "../src/types";
 
 const composition_id = "post-video";
 
@@ -13,7 +13,7 @@ const renderTestVideo = async (): Promise<void> => {
   const output_location = path.join(out_dir, "test.mp4");
 
   // Keep local test rendering deterministic and independent of external images.
-  const render_props = { ...default_video_props, image: "" };
+  const render_props = { ...defaultVideoProps, image: "" };
 
   await fs.mkdir(out_dir, { recursive: true });
 

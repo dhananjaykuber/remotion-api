@@ -5,7 +5,7 @@ export type VideoProps = {
   siteName: string;
 };
 
-export const default_video_props: VideoProps = {
+export const defaultVideoProps: VideoProps = {
   title: "How to Turn a Blog Post into a Short Video",
   scenes: [
     "Use one strong hook in the first 3 seconds.",
