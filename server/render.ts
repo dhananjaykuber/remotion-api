@@ -6,7 +6,7 @@ import { default_video_props } from "../src/types";
 
 const composition_id = "post-video";
 
-const RenderTestVideo = async (): Promise<void> => {
+const renderTestVideo = async (): Promise<void> => {
   const project_root = process.cwd();
   const entry_point = path.join(project_root, "index.ts");
   const out_dir = path.join(project_root, "out");
@@ -39,7 +39,7 @@ const RenderTestVideo = async (): Promise<void> => {
   console.log(`Video rendered successfully: ${output_location}`);
 };
 
-RenderTestVideo().catch((error: unknown) => {
+renderTestVideo().catch((error: unknown) => {
   console.error("Video render failed.", error);
   process.exit(1);
 });
