@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev:server": "tsx src/server/index.ts",
+    "dev:server": "tsx server/index.ts",
     "render:test": "tsx server/render.ts",
     "typecheck": "tsc --noEmit"
   },
