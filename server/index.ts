@@ -5,7 +5,7 @@ import express from "express";
 import { z } from "zod";
 import { bundle } from "@remotion/bundler";
 import { renderMedia, selectComposition } from "@remotion/renderer";
-import type { video_props } from "../src/types";
+import type { VideoProps } from "../src/types";
 
 const app = express();
 
@@ -38,7 +38,7 @@ const getServeUrl = async (): Promise<string> => {
 
 const buildVideoProps = (
   payload: z.infer<typeof render_request_schema>
-): video_props => {
+): VideoProps => {
   const scenes = payload.excerpt
     .replace(/\s+/g, " ")
     .split(/[.!?]+/)

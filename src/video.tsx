@@ -7,14 +7,14 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import type { video_props } from "./types";
+import type { VideoProps } from "./types";
 
 const clamp = {
   extrapolateLeft: "clamp" as const,
   extrapolateRight: "clamp" as const,
 };
 
-export const VideoComposition: React.FC<video_props> = ({
+export const VideoComposition: React.FC<VideoProps> = ({
   title,
   scenes,
   image,
