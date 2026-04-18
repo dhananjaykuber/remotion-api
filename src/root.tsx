@@ -3,7 +3,7 @@ import { Composition } from "remotion";
 import { default_video_props } from "./types";
 import { VideoComposition } from "./video";
 
-export const remotion_root: React.FC = () => {
+export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
