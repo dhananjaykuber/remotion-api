@@ -10,3 +10,6 @@ build
 
 # Ignore environment variables
 .env
+
+# Ignore video output
+out
